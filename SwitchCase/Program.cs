@@ -6,6 +6,7 @@ namespace SwitchCase
     {
         static void Main(string[] args)
         {
+            //Example 1
             Console.WriteLine("Please insert day you are on;");
             int day = Convert.ToInt32(Console.ReadLine());
             switch (day)
@@ -35,6 +36,7 @@ namespace SwitchCase
 
             }
 
+            //Example 2
             //Using the computer's date to find a day we are on.
             int day = (int)DateTime.Now.DayOfWeek;
             switch (day)
@@ -62,6 +64,7 @@ namespace SwitchCase
                     break;
             }
 
+            //Example 3
             Console.WriteLine("Please insert month you are in;");
             int month = Convert.ToInt32(Console.ReadLine());
             switch (month)
