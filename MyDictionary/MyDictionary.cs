@@ -30,7 +30,7 @@ namespace MyDictionary
             valueArray[valueArray.Length - 1] = value;
         }
 
-        public T[] Items1
+        public T[] Items
         {
             get { return valueArray; }
         }

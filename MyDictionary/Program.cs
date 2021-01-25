@@ -13,7 +13,7 @@ namespace MyDictionary
             vegetables.Add("Spinach");
             vegetables.Add("Garlic");
 
-            Console.WriteLine("My Vegetable List: "+"\n"+vegetables.Items1[0]+"\n"+vegetables.Items1[1]);
+            Console.WriteLine("My Vegetable List: "+"\n"+vegetables.Items[0]+"\n"+vegetables.Items[1]);
 
         }
     }
