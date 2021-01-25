@@ -5,24 +5,34 @@ using System.Text;
 namespace MyDictionary
 {
     class MyDictionary<T>
+
     {
-        T[] items;
+        T[] valueArray;
+
+        T[] tempValueArray;
+
         public MyDictionary()
         {
-            items = new T[0];
+            valueArray = new T[0];
         }
-        public void Add(T item)
-        {
-            T[] tempArray = items;
-            items = new T[items.Length + 1];
-            for (int i = 0; i < tempArray.Length; i++)
-            {
-                items[i] = tempArray[i];
 
+        public void Add(T value)
+        {
+            tempValueArray = valueArray;
+
+            valueArray = new T[valueArray.Length + 1];
+
+            for (int i = 0; i < tempValueArray.Length; i++)
+            {
+                valueArray[i] = tempValueArray[i];
             }
 
-            items[items.Length - 1] = item;
+            valueArray[valueArray.Length - 1] = value;
+        }
 
+        public T[] Items1
+        {
+            get { return valueArray; }
         }
     }
 }
